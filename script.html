@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Le Blog du Voyageur</title>
 </head>
@@ -14,19 +14,17 @@
     <header>
         <img src="/sources/logoLBDV.png" alt ="logo le blog du voyageur" class="logo"/>
         <nav>
-            <ul>
-                <li><a href="http://127.0.0.1:5500/script.html#">Home</a></li>
-                <li><a href="#">Find a journey</a></li>
-                <li><a href="#">Categories</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+            <a href="http://127.0.0.1:5500/script.html#" target="_blank">Home</a>
+            <a href="/article.html" target="_blank">Find a journey</a>
+            <a href="#">Categories</a>
+            <a href="mailto:contact-me@example.net">Contact</a>
         </nav>
     </header>
     <div class="header">
         <img src="/sources/article.jpg" alt="travel set desktop organisation" class="photo_header"/>
         <img src="/sources/iconTraveler.png" alt="icon traveler" class="iconT"/>
         <h2> | 10 commandements pour bien réparer son voyage</h2>
-        <button class="button"> Read article </button>
+        <button class="button">Read article</button>
     </div>
     <section>
         <article>
@@ -43,9 +41,17 @@
                     <p>Aliquam dolor tortor, convallis vitae tortor ac, efficitur fermentum elit. Sed facilisis diam sed lectus blandit efficitur. Donec id dictum nisl. Fusce elementum velit ac justo scelerisque, id bibendum libero semper. Sed auctor, lectus eget rhoncus pharetra, arcu massa finibus est, a facilisis mauris libero id ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Duis consequat nisl vel purus fermentum placerat.</p>
                     
                     <p>Donec sollicitudin ultrices lectus vitae maximus. Praesent ut consequat augue, vel tincidunt risus. Integer eget auctor massa. Nulla vitae tincidunt turpis. Curabitur varius semper suscipit. Donec feugiat iaculis ex eget dictum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean sapien nisi, tincidunt sed neque vitae, posuere consectetur turpis. Nam eu orci nulla. Suspendisse turpis eros, aliquet eu velit eget, efficitur aliquet erat.</p>
-                    
+                    <div style= "justify-content: center;">
+                        <ul class="caroussel_items">
+                            <li class="caroussel_item"><img src="/sources/scotland (1).jpg" alt ="scotland travel edinburg" class="photo_article" /></li>
+                            <li class="caroussel_item"><img src="/sources/scotland (2).jpg" alt ="scotland puffin travel" class="photo_article" /></li>
+                            <li class="caroussel_item"><img src="/sources/scotland (3).jpg" alt ="cow scotland nature travel" class="photo_article" /></li>
+                            <li class="caroussel_item"><img src="/sources/scotland (4).jpg" alt ="skyle island scotland adventure travel" class="photo_article" /></li>
+                            <li class="caroussel_item"><img src="/sources/scotland (5).jpg" alt ="castle scotland adventure travel" class="photo_article" /></li>
+                        </ul>
+                    </div>
                     <p>Donec sodales ornare arcu sit amet consequat. Fusce et purus quam. Nunc a enim purus. Integer justo nibh, accumsan id nibh quis, consequat mattis augue. Phasellus consectetur quam magna. Phasellus dignissim metus scelerisque posuere interdum. Nulla risus dui, consequat ut libero eu, blandit varius sapien. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer scelerisque arcu eu ullamcorper interdum. Sed tincidunt nunc sit amet odio ornare placerat. Fusce risus ex, tincidunt vel dignissim vel, pretium vitae felis. Integer viverra commodo nisi suscipit auctor.</p>
-                    
+
                     <p>Generated 7 paragraphs, 611 words, 4171 bytes of Lorem Ipsum</p>
                 </div>
         </article>
@@ -55,18 +61,46 @@
                 <h3>Le Voyageur</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam orci urna, varius vel mauris ac, varius sodales nunc. Curabitur sit amet volutpat metus. Nullam ornare mauris vel urna porttitor imperdiet. Proin quis ex turpis. Pellentesque venenatis, lorem sed blandit ultrices, urna enim gravida enim, eget dignissim mauris ante quis justo. Praesent sagittis orci fermentum rhoncus efficitur. Suspendisse ex nisi, commodo at volutpat vel, facilisis vitae felis.</p>
                 <p>Aenean sed nulla lectus. Cras massa dui, euismod id ultricies et, consequat id ex. Quisque aliquam malesuada dignissim.</p>
+                <div class="RS">
+                    <img src="/sources/iconRSociaux (1).png" alt="icon social media" class="iconRS" />
+                    <img src="/sources/iconRSociaux (2).png" alt="icon social media" class="iconRS" />
+                    <img src="/sources/iconRSociaux (3).png" alt="icon social media" class="iconRS" />
+                    <img src="/sources/iconRSociaux (4).png" alt="icon social media" class="iconRS" />
+                </div>
             </div>
         </aside>
     </section>
     <footer>
         <div class="tweet">
-
+            <h4>Last Tweet</h4>
+                <div class= "twit">
+                    <div style="display: flex; align-items: center;">
+                        <img src="/sources/logoLBDV.png" alt ="logo le blog du voyageur" class="logo_footer"/>
+                        <p style="font-weight: bold">Le blog du voyageur </p>
+                        <img src="/sources/iconCertif.png" alt="logo blue certified" class="iconC"/> 
+                    </div>
+                    <p>Voici le dernier projet sur lequel j'ai travaillé !</p>
+                    <div class="twiit">
+                        <p style="padding-right: 10px;">Retweet <span style="color: #2082CF; font-style: bold;">221</span></p>
+                        <p>J'aime <span style="color: #2082CF; font-style: bold;">672</span></p>
+                    </div>
+                </div>
         </div>
         <div class="RTravel">
-
+            <h4>Popular Trips</h4>
+            <img src="/sources/travel (1).jpg" alt ="kyoto japan travel" class="photo_footer" />
+            <img src="/sources/travel (2).jpg" alt ="italy venise travel" class="photo_footer" />
+            <img src="/sources/travel (3).jpg" alt ="portugal travel" class="photo_footer" />
+            <img src="/sources/travel (4).jpg" alt ="velo adventure travel" class="photo_footer" />
         </div>
         <div class="friends">
-
+            <h4>Friends</h4>
+            <ol>
+                <li>J'entends</li>
+                <li>Le loup</li>
+                <li>Le renard</li>
+                <li>Et la belette</li>
+            </ol>
         </div>
     </footer>
 </body>

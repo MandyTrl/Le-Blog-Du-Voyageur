@@ -16,7 +16,7 @@ h1 {
 
 h2 {
     font-size: 1em;
-    background-color: #FFCC32;
+    background-color: rgb(255, 204, 50, 0.6);    
     color: #403633;
     opacity: 1;
     letter-spacing: 0.1em;
@@ -24,7 +24,7 @@ h2 {
     text-align: right;
     text-transform: uppercase;
     position: absolute;
-    top: 70%;
+    top: 71%;
     padding: 21.5px 11px;
 }
 
@@ -38,6 +38,15 @@ h3 {
     text-transform: uppercase;
 }
 
+h4 {
+    font-size: 0.7em;
+    color: #403633;
+    letter-spacing: 0.3em;
+    padding-bottom: 5px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -46,35 +55,29 @@ header {
     margin-top: 20px;
 }
 
-nav ul li a:link{
+nav a{
     display: inline;
-    font-size: 0.9em;
+    font-size: 1.1em;
     text-transform: uppercase;
     text-decoration: none;
-    color: #2082CF;
+    color: #403633;
     transition: .5s;
-}
-
-nav ul li a:hover{
-    color: #FFCC32;
-}
-
-nav ul li a:active{
-    color:#403633;
-}
-
-nav ul li a:visited {
-    text-decoration: none;
-    color: #2082CF;
-}
-
-nav ul {
-    list-style-type: none;
-}
-
-nav li {
-    display: inline;
     padding: 5px;
+    border-bottom: transparent;
+}
+
+nav a:hover {
+    color: #FFCC32;
+    border-bottom: #FFCC32 solid 2px;
+}
+
+nav a:active {
+    color: #2082CF;
+    border-bottom: #FFCC32 solid 2px;
+}
+
+ol, ul {
+    list-style-type: none;
 }
 
 section {
@@ -91,6 +94,24 @@ aside {
     background-color: rgb(244, 244, 220, 0.3)
 }
 
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: #403633 1px solid;
+    padding: 10px 0px;
+}
+
+article {
+    padding-bottom: 15px;
+    width: 45em;
+}
+
+.articleB {
+    padding-bottom: 15px;
+    width: 100%;
+}
+
 .header {
     width: 100%;
     height: 20em;
@@ -100,9 +121,52 @@ aside {
     justify-content: center;
 }
 
+.tweet {
+    text-align: justify;
+    width: 18em;
+}
+
+.twiit {
+    display: flex;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    border-top: 1px solid rgb(199, 201, 201)
+}
+
+.RTravel {
+    margin-right: 15px;
+}
+
+.friends {
+    padding-right: 16px;
+}
+
+.friends ol {
+    border-left: #403633 1px solid;
+    padding-left: 13px;
+}
+
+.twit {
+    border: 1px solid rgb(199, 201, 201);
+    padding: 8px 15px;
+    font-size: 0.85em;
+}
+
 .photo_header {
     width: 100%;
     height: auto;
+}
+
+.photo_article {
+    height: 15em;
+    width: auto;
+}
+
+.photo_footer {
+    width: 9em;
+    height: 9em;
+    object-fit: cover;
+    image-rendering: optimizeQuality;
 }
 
 .photo_profil {
@@ -111,9 +175,47 @@ aside {
     display:flex
 }
 
+.RS {
+    display: flex;
+    justify-content: space-around;
+}
+
 .head_article {
     display: flex;
     align-items: flex-start;
+}
+
+.caroussel {
+    width: 80%;
+}
+
+.caroussel_items {
+    display: flex;
+    overflow-x: scroll;
+    padding: 1rem 0;
+    scroll-snap-type: x mandatory;
+}
+
+.caroussel_item {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 150px;
+    margin-left: 1rem;
+    scroll-snap-align: start;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+    height: 6px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #3d4852;
+    border-radius: 3px;
 }
 
 .logo {
@@ -121,10 +223,34 @@ aside {
     height: auto;
 }
 
+.logo_footer {
+    width: 2.5em;
+    height: auto;
+    float: left;
+}
+
 .iconP {
     width: auto;
     height: 3em;
     padding-right: 25px;
+}
+
+.iconRS {
+    width: auto;
+    height: 2.5em;
+}
+
+.iconRS:hover {
+ opacity: 0.65;
+ cursor: pointer;
+}
+
+
+.iconC {
+    width: auto;
+    height: 0.8em;
+    padding-left: 6px;
+    padding-top: 5px;
 }
 
 .iconQ {
@@ -139,19 +265,19 @@ aside {
     height: 1.7em;
     padding: 0px 13px 5px 0px;
     position: absolute;
-    top: 75%;
+    top: 76%;
     left: 46.7%;
     z-index: 1;
 }
 
 .button {
-    background-color: #FFCC32;
-    border: none;
+    border: 1.7px white solid;
+    background-color: transparent;
     color: #403633;
     padding: 10px 17px;
     text-align: center;
     font-size: 16px;
-    opacity: 0.62;
+    opacity: 0.8;
     transition: 0.3s;
     cursor: pointer;
     width: auto;
@@ -159,5 +285,6 @@ aside {
   }
   
 .button:hover {
+    background-color: rgb(255, 255, 255, 0.5);
     opacity: 1;
 }
